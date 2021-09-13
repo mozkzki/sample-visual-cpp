@@ -1,0 +1,64 @@
+#include "resource.h"
+#include <afxres.h>
+
+// IDR_MAINFRAME ICON "MFCSample1.ico"
+
+STRINGTABLE
+BEGIN
+	IDR_MAINFRAME "MFC Sample Application"
+END
+
+IDR_MAINFRAME MENU
+BEGIN
+
+	POPUP "ファイル(&F)"
+	BEGIN
+		MENUITEM "新規作成(&N)", ID_FILE_NEW
+		MENUITEM "開く(&O)", ID_FILE_OPEN
+		MENUITEM SEPARATOR
+		MENUITEM "アプリケーションの終了(&X)", ID_APP_EXIT
+	END
+
+	POPUP "表示(&W)"
+	BEGIN
+		MENUITEM "項目&1", ID_VIEW_ITEM1
+	END
+
+	POPUP "ヘルプ(&H)"
+	BEGIN
+		MENUITEM "バージョン情報(&A)...", ID_APP_ABOUT
+	END
+END
+
+// IDR_SMALLTEXTTYPE ICON "SmallText.ico"
+
+STRINGTABLE
+BEGIN
+	IDR_SMALLTEXTTYPE "(dummy)\nSmallText\nSmall Text\nSmall Text (*.txt-sample)\n.txt\nSmall.TextDoc.1\nSmallTextDoc\n"
+END
+
+IDR_SMALLTEXTTYPE MENU
+BEGIN
+
+	POPUP "ファイル(&F)"
+	BEGIN
+		MENUITEM "新規作成(&N)", ID_FILE_NEW
+		MENUITEM "開く(&O)", ID_FILE_OPEN
+		MENUITEM "閉じる(&C)", ID_FILE_CLOSE
+		MENUITEM "名前をつけて保存(&A)", ID_FILE_SAVE_AS
+		MENUITEM SEPARATOR
+		MENUITEM "アプリケーションの終了(&X)", ID_APP_EXIT
+	END
+
+	POPUP "ヘルプ(&H)"
+	BEGIN
+		MENUITEM "バージョン情報(&A)...", ID_APP_ABOUT
+	END
+
+END
+
+STRINGTABLE
+BEGIN
+	AFX_IDS_IDLEMESSAGE "レディ(SmallApp)"
+	ID_VIEW_ITEM1 "項目1を実行します。"
+END

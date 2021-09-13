@@ -1,0 +1,6 @@
+#define IDR_MAINFRAME 128
+#define ID_VIEW_ITEM1 500
+
+#define IDR_SMALLTEXTTYPE 800
+
+#define IDC_EDIT1 1000
