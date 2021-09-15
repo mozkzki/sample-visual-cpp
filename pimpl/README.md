@@ -1,0 +1,3 @@
+# pimpl
+
+Pimplイディオム。
